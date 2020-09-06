@@ -39,7 +39,7 @@ class Script {
     var board_link = request.content.action.data.board.shortLink;
     var board_name = request.content.action.data.board.name;
 
-    var user_avatar = "https://trello-avatars.s3.amazonaws.com/"+request.content.action.memberCreator.avatarHash +"/170.png";
+    var user_avatar = "https://trello-members.s3.amazonaws.com/" + request.content.action.memberCreator.id + "/" + request.content.action.memberCreator.avatarHash + "/170.png";
 
     var message_text = author_name;
 
